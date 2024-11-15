@@ -1,0 +1,5 @@
+hub NCCIT_HERV
+shortLabel NCCIT HERV RNASeq Alignments
+longLabel Coverage (reads) from 3 replicates of 150bp pair-ended RNASeq on NCCIT
+genomesFile genomes.txt
+email charles.gleason@mssm.edu
