@@ -1,25 +1,31 @@
-track NCCIT_RNASeq
-compositeTrack on
-shortLabel HERV expression in NCCIT
-type bigWig
-visibility full
-autoScale on
-allButtonPair on
+track hg38_alignments
+superTrack on show
+shortLabel All Data
+longLabel Contains all alignment data for the paper
 
-    track  short1_conf
-    parent NCCIT_RNASeq on
-    bigDataUrl short1_conf.bw
-    shortLabel NCCIT RNASeq Replicate 1
-    longLabel Coverage based on confident (>90%) read assignments by telescope to HERV loci
+    track NCCIT_RNASeq
+    compositeTrack on
+    parent hg38_alignments
+    shortLabel HERV expression in NCCIT
+    type bigWig
+    visibility full
+    autoScale on
+    allButtonPair on
 
-    track  short2_conf
-    parent NCCIT_RNASeq on
-    bigDataUrl short2_conf.bw
-    shortLabel NCCIT RNASeq Replicate 2
-    longLabel Coverage based on confident (>90%) read assignments by telescope to HERV loci
+        track short1_conf
+        parent NCCIT_RNASeq on
+        bigDataUrl short1_conf.bw
+        shortLabel NCCIT RNASeq Replicate 1
+        longLabel Coverage based on confident (>90%) read assignments by telescope to HERV loci
 
-    track  short3_conf
-    parent NCCIT_RNASeq on
-    bigDataUrl short3_conf.bw
-    shortLabel NCCIT RNASeq Replicate 3
-    longLabel Coverage based on confident (>90%) read assignments by telescope to HERV loci
+        track short2_conf
+        parent NCCIT_RNASeq on
+        bigDataUrl short2_conf.bw
+        shortLabel NCCIT RNASeq Replicate 2
+        longLabel Coverage based on confident (>90%) read assignments by telescope to HERV loci
+
+        track short3_conf
+        parent NCCIT_RNASeq on
+        bigDataUrl short3_conf.bw
+        shortLabel NCCIT RNASeq Replicate 3
+        longLabel Coverage based on confident (>90%) read assignments by telescope to HERV loci
