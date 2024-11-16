@@ -1,6 +1,5 @@
 track NCCIT_RNASeq
 compositeTrack on
-parent hg38
 shortLabel HERV expression in NCCIT
 type bigWig
 visibility full
